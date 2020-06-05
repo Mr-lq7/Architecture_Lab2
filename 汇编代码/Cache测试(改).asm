@@ -16,12 +16,11 @@ m2:
 	add t1,t0,s3	# 加上ROM外部地址，即A[i * M + j]的绝对地址
 	lw t3,0(t1) 	# 读出A[i * M + j]的值
 	
-	mul t4,s6,s8	# 找到B[i * M + j]的相对地址 = A总个数 * 4个字节
-	mul t4,t4,s4	# * 4
-	add t5,t1,t4	# 加上ROM外部地址，即B[i * M + j]的绝对地址
-	lw t6,0(t5)	# 读出B[i * M + j]的值
-
-
+#	mul t4,s6,s8	# 找到B[i * M + j]的相对地址 = A总个数 * 4个字节
+#	mul t4,t4,s4	# * 4
+#	add t5,t1,t4	# 加上ROM外部地址，即B[i * M + j]的绝对地址
+#	lw t6,0(t5)	# 读出B[i * M + j]的值
+	addi t6,t3,64
 	
 	add s10,t3,t6 	# A + B
 	#sw s10,0(t0)	# 将 A + B的结果存储到RAM中
