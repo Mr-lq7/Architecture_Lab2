@@ -3,6 +3,7 @@
 **体系结构实验**
 
 指导书网址：https://hitsz-lab.gitee.io/computer-arch/lab1/part1/
+**注意：建议直接clone 最新commit的 之前commit的partA_final好像有点问题（不要在意这些细节==）**
 
 **实验二PartA，实现一个直接相连的Cache**
 =======
